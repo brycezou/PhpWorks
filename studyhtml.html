@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title>HTML学习</title>
+	</head>
+	
+	<body>
+		<h1>h1标题</h1>
+		<h3>h3标题</h3>
+		
+		<!--特殊符号-->
+		<font size="7">特殊符号：&copy; &nbsp; &yen;</font>
+		<br/>
+		
+		<!--超链接-->
+		<a href="#">跳转到本页面</a>
+		<br/>
+		<a href="http://www.baidu.com">跳转到百度</a>
+		<br/>
+		
+		<!--表格，tr表示一行，td表示一列-->
+		<table align="center" border="2px" bgcolor="yellow" width="20%" height="100px">
+			<tr align="left">
+				<td>A</td>
+				<td>B</td>
+			</tr>
+			<tr align="right">
+				<td>C</td>
+				<td>D</td>
+			</tr>
+		</table>
+		
+		<!--图片资源-->
+		<img src="ns.jpg" width="250px" height="" border="3px">
+		<img src="https://www.baidu.com/img/2016_4_26logo_843a64cc86a54b8da14d7e9baad4d15f.gif" width="250px" height="" border="3px">
+	
+		<!--表格布局练习-->
+		<center><b>自定义菜谱</b></center>
+		<table background="背景图片名称" align="center" border="2px" bordercolor="red" cellspacing="2px" cellpadding="2px" width="500px">
+			<tr>
+				<!--colspan="3"表示该列占3列-->
+				<td align="center" colspan="3">菜谱</td>
+			</tr>
+			<tr>
+				<td rowspan="2">素菜</td>
+				<td>青草茄子</td>
+				<td>干煸豆角</td>
+			</tr>
+			<tr>
+				<td>小炒韭菜</td>		
+				<td>番茄鸡蛋</td>
+			</tr>
+			<tr>
+				<td rowspan="2">荤菜</td>
+				<td>水煮肉片</td>
+				<td>鱼香肉丝</td>
+			</tr>
+			<tr>
+				<!--在td里可以放置任意元素-->
+				<td>宫保鸡丁<img src="ns.jpg" width="100px"/></td>
+				<td>干锅牛蛙</td>
+			</tr>
+		</table>
+		
+		<!--无序列表-->
+		<ul>
+			<li type="circle">英雄</li>
+			<li type="square">精武门</li>
+			<li>西游记</li>
+		</ul>
+		
+		<!--有序列表，type也可以为A、a、1、i-->
+		<ol type="I" start="4">
+			<li>宋江</li>
+			<li>卢俊义</li>
+			<li>吴用</li>
+		</ol>
+		
+		<!--在子页面中加载指定网页-->
+		<div>
+			<!--替换target所指框架的内容-->
+			<!--target常用的5个值：_blank，_self，_parent，_top，目标框架的name-->
+			<a href="http://www.baidu.com" target="rightFrame">百度网，点击这个，替换右边的页面</a>
+			<br/>
+			<a href="http://www.qq.com" target="rightFrame">腾讯网，点击这个，替换右边的页面</a>
+		</div>
+		
+		
+		
+	</body>
+	
+</html>
