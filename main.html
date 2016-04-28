@@ -1,5 +1,12 @@
 <!--该页面中绝对不能出现body，也不能出现文字，noresize属性可以禁止改变大小-->
-<frameset cols="60%,*">
-	<frame name="leftFrame" src="studyhtml.html" frameborder="0"/>
+<!--一般只有后台管理端界面才会用这种布局，前端很少用-->
+<frameset cols="60%,20%,20%">
+	<frame src="studyhtml.html" frameborder="0"/>
+	
+	<frameset rows="60%,*">
+		<frame src="http://www.baidu.com" frameborder="0"/>
+		<frame src="subpage.html" frameborder="0"/>
+	</frameset>
+	
 	<frame name="rightFrame" src="subpage.html" frameborder="0"/>
 </frameset>
