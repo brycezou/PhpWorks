@@ -5,7 +5,7 @@
 	
 	<body>
 		<h1>h1标题</h1>
-		<h3>h3标题</h3>
+		<h3><i>h3标题斜体</i></h3>
 		
 		<!--特殊符号-->
 		<font size="7">特殊符号：&copy; &nbsp; &yen;</font>
@@ -89,11 +89,51 @@
 		<!--method，提交数据的方式：POST更安全、数据量更大，但GET速度更快-->
 		<br/><br/>
 		<form action="#" method="GET">
-			用户名：<input type="text" name="username"/><br/>
-			密&nbsp;&nbsp;码：<input type="password" name="password"/><br/>
+			用户名：<input type="text" name="username"><br/>
+			密&nbsp;&nbsp;码：<input type="password" name="password"><br/>
+			
+			<!--name相同的为一组-->
+			性&nbsp;&nbsp;别：
+			<input type="radio" name="sex" value="male">男
+			<input type="radio" name="sex" value="female">女
+			<br/>
+			
+			<!--传递数据的方式：?city=beijing&city=shanghai-->
+			你最喜欢哪些城市：<br/>
+			<input type="checkbox" name="city" value="beijing">北京
+			<input type="checkbox" name="city" value="nanjing">南京
+			<input type="checkbox" name="city" value="shanghai">上海
+			<br/>
+			
+			<!--下拉列表-->
+			请选择你的国籍：
+			<select name="country">
+				<option value="China">中国</option>
+				<option value="U.S.A">美国</option>
+				<option value="Germany">德国</option>
+			</select>
+			<br/>
+			
+			<!--文本域-->
+			<textarea name="mytext" cols="40" rows="10">
+			</textarea>
+			<br/>
+			
+			<!--文件上传控件-->
+			<input type="file" name="filepath">上传文件
+			<br/>
+			
+			<!--可以使用隐藏域传递数据，而不改变用户界面-->
+			<input type="hidden" name="hider" value="some invisible information">
+
 			<input type="submit" value="提交"/>
 			<input type="reset" value="重置"/><br/>
 		</form>
+		
+		<hr width="50%"/>
+		
+		<font face="华文彩云" size="7">华文彩云字体</font>
+		<br/>
 		
 		<!--iframe画中画-->
 		<br/>
